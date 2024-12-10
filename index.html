@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Temperature Converter</h1>
+        <form>
+            <div class="input-group">
+                <label for="temperature">Temperature:</label>
+                <input type="number" id="temperature" name="temperature" placeholder="Enter temperature value">
+                <i class="fas fa-thermometer-half"></i>
+            </div>
+            <div class="select-group">
+                <label for="from-unit">From:</label>
+                <select id="from-unit" name="from-unit">
+                    <option value="celsius">Celsius</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+                <i class="fas fa-angle-down"></i>
+            </div>
+            <div class="select-group">
+                <label for="to-unit">To:</label>
+                <select id="to-unit" name="to-unit">
+                    <option value="celsius">Celsius</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+                <i class="fas fa-angle-down"></i>
+            </div>
+            <button id="convert-btn">Convert</button>
+            <button id="reset-btn">Reset</button>
+            <p id="result"></p>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
